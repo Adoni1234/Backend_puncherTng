@@ -1,0 +1,6 @@
+@puncherTng_HostAddress = http://localhost:5132
+
+GET {{puncherTng_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

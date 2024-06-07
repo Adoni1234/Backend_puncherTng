@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adoni\\source\\repos\\puncherTng\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\controllers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\controllers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\controllers\\backoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\controllers\\backoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\punchertng.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\punchertng.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\controllers\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\controllers\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\models\\modelsinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\models\\modelsinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\contextdb\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\contextdb\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|c:\\users\\adoni\\source\\repos\\punchertng\\punchertng\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C1EA9DF3-829F-44E6-B8DE-27C4BA714E94}|puncherTng\\puncherTng.csproj|solutionrelative:punchertng\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Backoffice.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Controllers\\Backoffice.cs",
+              "RelativeDocumentMoniker": "puncherTng\\Controllers\\Backoffice.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Controllers\\Backoffice.cs",
+              "RelativeToolTip": "puncherTng\\Controllers\\Backoffice.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAGIAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T14:08:22.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "authentication.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Controllers\\authentication.cs",
+              "RelativeDocumentMoniker": "puncherTng\\Controllers\\authentication.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Controllers\\authentication.cs",
+              "RelativeToolTip": "puncherTng\\Controllers\\authentication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:24:34.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Models\\Model.cs",
+              "RelativeDocumentMoniker": "puncherTng\\Models\\Model.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Models\\Model.cs",
+              "RelativeToolTip": "puncherTng\\Models\\Model.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwBcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T13:17:55.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\ContextDB\\Context.cs",
+              "RelativeDocumentMoniker": "puncherTng\\ContextDB\\Context.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\ContextDB\\Context.cs",
+              "RelativeToolTip": "puncherTng\\ContextDB\\Context.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA+wAoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T13:14:52.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Program.cs",
+              "RelativeDocumentMoniker": "puncherTng\\Program.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Program.cs",
+              "RelativeToolTip": "puncherTng\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T13:06:02.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "puncherTng.csproj",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\puncherTng.csproj",
+              "RelativeDocumentMoniker": "puncherTng\\puncherTng.csproj",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\puncherTng.csproj",
+              "RelativeToolTip": "puncherTng\\puncherTng.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-03T13:00:22.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Controllers\\Main.cs",
+              "RelativeDocumentMoniker": "puncherTng\\Controllers\\Main.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Controllers\\Main.cs",
+              "RelativeToolTip": "puncherTng\\Controllers\\Main.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAD4vx4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T16:50:41.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModelsInputs.cs",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Models\\ModelsInputs.cs",
+              "RelativeDocumentMoniker": "puncherTng\\Models\\ModelsInputs.cs",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\Models\\ModelsInputs.cs",
+              "RelativeToolTip": "puncherTng\\Models\\ModelsInputs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:28:07.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\appsettings.json",
+              "RelativeDocumentMoniker": "puncherTng\\appsettings.json",
+              "ToolTip": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\appsettings.json",
+              "RelativeToolTip": "puncherTng\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-03T13:05:28.149Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
