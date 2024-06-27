@@ -202,7 +202,7 @@ namespace puncherTng.Controllers
                 email = data.email,
                 password = password,
                 cedula = data.cedula,
-                status = "Inactivo"
+                status = "Activo"
             };
 
             _context.usuarios.Add(Data);

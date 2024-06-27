@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\puncherTng.csproj": {}
+    "C:\\puncherTng\\puncherTng\\puncherTng.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\puncherTng.csproj": {
+    "C:\\puncherTng\\puncherTng\\puncherTng.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\puncherTng.csproj",
+        "projectUniqueName": "C:\\puncherTng\\puncherTng\\puncherTng.csproj",
         "projectName": "puncherTng",
-        "projectPath": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\puncherTng.csproj",
+        "projectPath": "C:\\puncherTng\\puncherTng\\puncherTng.csproj",
         "packagesPath": "C:\\Users\\adoni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adoni\\source\\repos\\puncherTng\\puncherTng\\obj\\",
+        "outputPath": "C:\\puncherTng\\puncherTng\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
