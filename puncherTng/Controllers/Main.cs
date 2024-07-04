@@ -28,8 +28,10 @@ namespace puncherTng.Controllers
                 return BadRequest("Code is required");
 
             var nameEmployee = await SearchingForemployeeName(data.code);
-            if (nameEmployee[0] == null)
-               return NotFound("Employee not found or invalid code");
+            if (nameEmployee == null || nameEmployee.Length == 0 || nameEmployee[0] == null)
+            {
+                return Ok(new { message = "Error: Employee not found or invalid code" });
+            }
             if (nameEmployee[1] == "Inactivo" || nameEmployee[1] == "")
                 return BadRequest("Su codigo de validacion esta innactivo");
 
