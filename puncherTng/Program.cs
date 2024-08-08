@@ -20,8 +20,7 @@ builder.Services.AddCors(options => options.AddPolicy(name: "PuncherTngOrigins",
         policy.WithOrigins("https://puncher-assitan-tng.vercel.app", "http://localhost:3000")
               .AllowAnyMethod()
               .AllowAnyHeader()
-              .AllowCredentials()
-              .WithExposedHeaders("Authorization"); // Exponer el encabezado Authorization
+              .AllowCredentials();
     }));
 
 builder.Services.AddScoped<IDInitializationDb, InitializationDb>();

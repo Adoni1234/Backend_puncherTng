@@ -42,4 +42,13 @@
         public string code_identification { get; set; } = string.Empty;
 
     }
+
+    public class PasswordInput
+    {
+
+        public int Id { get; set; }
+        public string password { get; set; } = string.Empty;
+        public string current_password { get; set; } = string.Empty;
+
+    }
 }

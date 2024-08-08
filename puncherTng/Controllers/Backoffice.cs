@@ -35,10 +35,14 @@ namespace puncherTng.Controllers
                         };
 
             var result = await query.ToListAsync();
-
             var result_filter = (employee != "employee") ?
-                result.Where(r => r.AgentName == employee && TryParseDate(r.fecha_salida, out DateTime fechaSalida) && fechaSalida >= from && fechaSalida <= to).ToList()
-                : result.Where(r => TryParseDate(r.fecha_salida, out DateTime fechaSalida) && fechaSalida >= from && fechaSalida <= to).ToList();
+                result.Where(r => r.AgentName == employee
+                                  && (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
+                                      ? fechaSalida >= from && fechaSalida <= to
+                                      : r.fecha_salida == null)).ToList()
+                : result.Where(r => (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
+                                      ? fechaSalida >= from && fechaSalida <= to
+                                      : r.fecha_salida == null)).ToList();
 
             return Ok(result_filter);
         }

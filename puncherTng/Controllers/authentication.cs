@@ -54,5 +54,38 @@ namespace puncherTng.Controllers
             await _context.SaveChangesAsync();
             return Ok(new { message = "Usuario Registrado Existosamente"});
         }
+
+
+        [HttpPut("restore/Password")]
+
+        public async Task<IActionResult> RestorePassword([FromBody] PasswordInput data)
+        {
+            if (data is null)
+                return BadRequest("Data is null, data required");
+
+            if (data.Id == 0)
+                return BadRequest("Id Requiered");
+
+            var dbInput = await _context.usuarios.FindAsync(data.Id);
+
+            if (dbInput == null)
+                return BadRequest("User not Found");
+
+            if(dbInput.password == data.current_password)
+            {
+              dbInput.password = data.password;
+            }
+            else
+            {
+                return BadRequest("current password do not match");
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok(new { 
+                 message = "Su contraseña a sido cambianda sastifactoriamente " + dbInput.username
+            });
+
+
+        }
     }
 }
