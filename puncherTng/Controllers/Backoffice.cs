@@ -47,6 +47,48 @@ namespace puncherTng.Controllers
             return Ok(result_filter);
         }
 
+        [HttpGet("history/hours")]
+        public async Task<ActionResult<IEnumerable<object>>> GetHistoriesbyHours()
+        {
+            var query = from history in _context.histories
+                        join agent in _context.agentes on history.IdAngente equals agent.Id
+                        join companie in _context.companie on agent.id_companie equals companie.Id
+                        select new
+                        {
+                            HistoryId = history.Id,
+                            AgentName = agent.Name,
+                            fecha_entrada = history.AdmissionDate,
+                            fecha_salida = history.ExitDate,
+                            companie = companie.code_identification
+                        };
+
+            var result = await query.ToListAsync();
+
+            var processedResult = result
+                .Select(r => new
+                {
+                    r.companie,
+                    r.fecha_entrada,
+                    r.fecha_salida,
+                    horas_trabajadas = (r.fecha_salida != null)
+                        ? (DateTime.Parse(r.fecha_salida) - DateTime.Parse(r.fecha_entrada)).TotalHours
+                        : 0
+                })
+                .GroupBy(r => r.companie)
+                .Select(g => new
+                {
+                    CompanieName = g.Key,
+                    TotalHours = (int)Math.Round(g.Sum(x => x.horas_trabajadas))
+                })
+                .ToList();
+
+            return Ok((processedResult));
+        }
+
+
+
+
+
         private bool TryParseDate(string dateString, out DateTime date)
         {
             return DateTime.TryParse(dateString, out date);

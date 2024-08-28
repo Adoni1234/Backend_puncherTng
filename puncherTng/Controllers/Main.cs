@@ -35,6 +35,18 @@ namespace puncherTng.Controllers
             if (nameEmployee[1] == "Inactivo" || nameEmployee[1] == "")
                 return BadRequest("Su codigo de validacion esta innactivo");
 
+            var validCountPuncher = await ValidByHoursPuncher(data.code);
+
+            if(validCountPuncher >= 1)
+            {
+                return Ok(new { message = "Error: Ya has ponchador la cantida de veces requeridas por dia" });
+
+            }
+
+
+
+
+
             try
             {
                 string sql = "INSERT INTO accesses (code) VALUES (@Code); SELECT CAST(scope_identity() AS int);";
@@ -78,9 +90,42 @@ namespace puncherTng.Controllers
             if (employee == null)
                 return null;
 
-
-
             return [employee.Name, employee.status];
         }
+
+
+        [HttpGet("day/poncher")]
+        public async Task<int> ValidByHoursPuncher(string code)
+        {
+            if (string.IsNullOrEmpty(code))
+                return 0;
+
+            var accessCode = await _context.accessCodes
+                                           .FirstOrDefaultAsync(a => a.code == code);
+            if (accessCode == null)
+                return 0;
+
+            var employee = await _context.agentes
+                                         .FirstOrDefaultAsync(e => e.Id == accessCode.IdAgente);
+
+            if (employee == null)
+                return 0;
+
+            var today = DateTime.Today;
+
+            var histories = await _context.histories
+                                          .Where(h => h.IdAngente == employee.Id)
+                                          .ToListAsync();
+
+            var punchCountToday = histories
+                                  .Count(h => DateTime.TryParse(h.AdmissionDate, out DateTime admissionDate) &&
+                                              admissionDate.Date == today && h.ExitDate != null);
+
+
+
+
+            return punchCountToday;
+        }
+
     }
 }
