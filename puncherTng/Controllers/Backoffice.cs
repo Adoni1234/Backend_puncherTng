@@ -204,7 +204,7 @@ namespace puncherTng.Controllers
             dataupdate.LastName = data.lastName;
             dataupdate.Correo = data.correo;
             dataupdate.Cedula = data.cedula;
-            dataupdate.designation = data.Designatio;
+            dataupdate.designation = data.designation;
 
             await _context.SaveChangesAsync();
 

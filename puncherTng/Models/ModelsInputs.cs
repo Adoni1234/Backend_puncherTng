@@ -18,7 +18,7 @@
         public string lastName { get; set; } = string.Empty;
         public string correo { get; set; } = string.Empty;
         public string cedula { get; set; } = string.Empty;
-        public string Designatio { get; set; } = string.Empty;
+        public string designation { get; set; } = string.Empty;
 
     }
 
