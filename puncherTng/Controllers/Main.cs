@@ -121,9 +121,6 @@ namespace puncherTng.Controllers
                                   .Count(h => DateTime.TryParse(h.AdmissionDate, out DateTime admissionDate) &&
                                               admissionDate.Date == today && h.ExitDate != null);
 
-
-
-
             return punchCountToday;
         }
 
