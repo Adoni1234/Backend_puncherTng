@@ -51,4 +51,14 @@
         public string current_password { get; set; } = string.Empty;
 
     }
+
+    public class EmailInput
+    {
+        public string subject { get; set; } = string.Empty;
+        public string email { get; set; } = string.Empty;
+        public string message { get; set; } = string.Empty;
+
+    }
+
+
 }

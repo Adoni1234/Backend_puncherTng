@@ -13,6 +13,7 @@ namespace puncherTng.ContextDB
         public DbSet<History> histories { get; set; }
         public DbSet<Access> accesses { get; set; }
         public DbSet<Companies> companie { get; set; }
+        public DbSet<history_audit> history_audit { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

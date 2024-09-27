@@ -22,16 +22,18 @@ namespace puncherTng.Controllers
         private const string _caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
 
         [HttpGet("History")]
-        public async Task<ActionResult<IEnumerable<object>>> GetHistories(string employee, DateTime from, DateTime to)
+        public async Task<ActionResult<IEnumerable<object>>> GetHistories(string employee, string companie, DateTime from, DateTime to)
         {
             var query = from history in _context.histories
                         join agent in _context.agentes on history.IdAngente equals agent.Id
+                        join c in _context.companie on agent.id_companie equals c.Id
                         select new
                         {
                             HistoryId = history.Id,
                             AgentName = agent.Name,
                             fecha_entrada = history.AdmissionDate,
-                            fecha_salida = history.ExitDate
+                            fecha_salida = history.ExitDate,
+                            Companie = c.name
                         };
 
             var result = await query.ToListAsync();
@@ -40,7 +42,19 @@ namespace puncherTng.Controllers
                                   && (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
                                       ? fechaSalida >= from && fechaSalida <= to
                                       : r.fecha_salida == null)).ToList()
-                : result.Where(r => (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
+                :(companie != "companie") ?
+                 result.Where(r => r.Companie == companie
+                                  && (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
+                                      ? fechaSalida >= from && fechaSalida <= to
+                                      : r.fecha_salida == null)).ToList()
+
+                : (companie != "companie" && employee != "employee") ?
+                                       result.Where(r => r.Companie == companie
+                                        && r.AgentName == employee && (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
+                                      ? fechaSalida >= from && fechaSalida <= to
+                                      : r.fecha_salida == null)).ToList()
+
+                                      : result.Where(r => (TryParseDate(r.fecha_salida, out DateTime fechaSalida)
                                       ? fechaSalida >= from && fechaSalida <= to
                                       : r.fecha_salida == null)).ToList();
 
@@ -486,9 +500,12 @@ namespace puncherTng.Controllers
             var random = new Random();
             var number1 = random.Next(0, 1000);
             var firstLetterName = name[0];
+            var SecondLetterName = name[1];
 
-            var code = $"{companie.code_identification}-{firstLetterName}{number1:000}";
+            var code = $"{SecondLetterName}{firstLetterName}-{number1:000}";
             return code;
         }
+
+
     }
 }

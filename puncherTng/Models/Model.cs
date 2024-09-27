@@ -54,4 +54,12 @@
         public string code_identification { get; set; } = string.Empty;
     }
 
+    public class history_audit
+    {
+        public int Id { get; set; }
+        public string AdmissionDate { get; set; } = string.Empty;
+        public string? ExitDate { get; set; } = string.Empty;
+        public int IdAngente { get; set; }
+    }
+
 }
